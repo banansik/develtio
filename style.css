@@ -1,0 +1,392 @@
+/*
+Theme Name:  Develtio
+Author: Mateusz Banasik
+Author URI:
+Description: zadanie rekrutacyjne
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: develtio
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: "Lato";
+    display: flex;
+    height: 114px;
+    padding: 10px;
+    align-content: center;
+}
+header .logo {
+    flex: 0.66;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-right: 30px;
+}
+header .logo img {
+    height: auto;
+    width: auto;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    display: inline-block;
+    padding-top: 35px;
+}
+header nav ul li a {
+    display: inline-block;
+    color: #1C3E95;
+    padding: 15px;
+    font-size: 1.5vw;
+}
+
+.margin {
+    display: none;
+}
+
+.icon {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .active a {
+        display: none;
+    }
+
+    .icon {
+        display: inline-block;
+        float: right;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    header {
+        display: block;
+        height: 114px;
+        align-content: center;
+    }
+    header .logo {
+        display: block;
+        padding-top: 5px;
+        margin-top: 0px;
+        margin-right: 30px;
+    }
+    header .logo img {
+        height: auto;
+        width: auto;
+    }
+    header nav {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+    }
+    header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    header nav ul li {
+        display: block;
+        padding: 0px;
+    }
+    header nav ul li a {
+        position: relative;
+        display: block;
+        color: #1C3E95;
+        padding: 0px;
+        margin: 0px;
+    }
+    header .topnav.responsive .icon {
+        right: 0;
+        top: 0;
+    }
+    header .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+
+    .margin.add {
+        display: block;
+        margin-bottom: 155px;
+    }
+}
+.family {
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: center;
+}
+.family .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.family .form {
+    position: absolute;
+    left: 55%;
+    top: 9%;
+    bottom: 8%;
+    overflow: auto;
+    background-color: white;
+    max-width: 489px;
+}
+.family .form .dane {
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.family .form .dane p {
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1C3E95;
+    line-height: 1;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+.family .form .dane input {
+    align-content: center;
+    border: solid;
+    margin-bottom: 10px;
+    border-color: lightgray;
+    height: 45px;
+    padding-left: 10px;
+    border-width: 1px;
+}
+.family .form .dane input .kod {
+    width: 50%;
+    border: solid;
+}
+.family .form .dane .normal {
+    display: block;
+    width: 90%;
+}
+.family .form .miejsco {
+    width: 52%;
+}
+.family .form .kod {
+    width: 37%;
+}
+.family .form .check-opis {
+    width: 85%;
+    text-align: left;
+    font-size: 10px;
+    font-size: 0.7vw;
+    margin-bottom: 30px;
+}
+.family .form .button {
+    background-color: #FE7A22;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 50%;
+    cursor: pointer;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    left: 22%;
+    margin-bottom: 30px;
+}
+.family .maj {
+    position: absolute;
+    line-height: 1;
+    bottom: 10%;
+    right: 45%;
+    left: 20%;
+    top: 70%;
+}
+.family .maj .orange {
+    color: #FE7A22;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2.5vw;
+    word-wrap: break-word;
+    text-align: left;
+    font-weight: bold;
+}
+.family .maj .normal {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5vw;
+    text-align: left;
+    font-weight: bold;
+    width: 75%;
+}
+.family info {
+    max-width: 1920px;
+    position: absolute;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+}
+.family info .p {
+    text-align: left;
+    font-family: "Quicksand", "non serif";
+    font-size: 24px;
+    font-weight: bold;
+    color: #1C3E95;
+    line-height: 1;
+    padding-top: 10px;
+}
+
+.home {
+    position: relative;
+}
+.home .image2 {
+    width: 100%;
+}
+.home .more {
+    position: absolute;
+    line-height: 1;
+    bottom: 45%;
+    right: 40%;
+    top: 7%;
+    left: 20%;
+}
+.home .more .nag {
+    color: #1C3E95;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2.8vw;
+    word-wrap: break-word;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+.home .more .pyt {
+    color: #1C3E95;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5vw;
+    word-wrap: break-word;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+}
+.home .more .bold {
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9vw;
+    word-wrap: break-word;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 0.5;
+    line-height: 2;
+}
+.home .more .normal {
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9vw;
+    word-wrap: break-word;
+    text-align: left;
+    letter-spacing: 0.5;
+    line-height: 2;
+    margin-bottom: 2em;
+}
+.home .more .button {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1em 3em;
+    border: none;
+    border-radius: 8px;
+    background-color: #FE7A22;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+}
+@media screen and (max-width: 1200px) {
+    .home .more .button {
+        padding: 0.5em 1em;
+    }
+}
+
+footer {
+    background-color: #1C3E95;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+}
+footer .inner_footer {
+    display: block;
+    align-content: center;
+    height: 100%;
+    margin-left: 10%;
+}
+footer .inner_footer .footer_four {
+    width: calc(20% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+    margin-right: 5%;
+}
+footer .inner_footer .footer_four h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2vw;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+footer .inner_footer .footer_four a {
+    font-family: "Lato", sans-serif;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    font-weight: 300;
+}
+footer .inner_footer .footer_four:last-child {
+    margin-right: 0;
+}
+footer .inner_footer .numer {
+    color: #FE7A22;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+@media screen and (max-width: 1100px) {
+    footer .inner_footer .footer_four {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    footer .inner_footer a {
+        line-height: 15px;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
